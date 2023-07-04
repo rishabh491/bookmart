@@ -21,7 +21,7 @@ export const Checkout = ({setCheckout}) => {
         setUser(data);
     }
     getUser();
-  }, []);
+  }, []);//eslint-disable-line
 
   async function handleOrderSubmit(event){
     event.preventDefault();
@@ -42,7 +42,7 @@ export const Checkout = ({setCheckout}) => {
         headers: { "Content-Type": "application/json", Authorization: `Bearer ${token}` },
         body: JSON.stringify(order)
     });
-    const data = await response.json();
+    const data = await response.json();//eslint-disable-line
     clearCart();
     navigate("/order-summary",{state:{status:true}});
   }

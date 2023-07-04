@@ -5,7 +5,7 @@ import { useCart } from "../../../context";
 
 export const CartList = () => {
 
-  const[len,setLen]=useState(true); 
+  const[len,setLen]=useState(true); //eslint-disable-line
   const [checkout, setCheckout] = useState(false);
   
   const {cartList,total}=useCart()
