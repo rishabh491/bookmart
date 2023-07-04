@@ -7,8 +7,8 @@ import { FilterBar } from "./components/FilterBar";
 
 export const ProductsList = () => {
   const { products, initialProductList } = useFilter();
-  const [show, setShow] = useState(false);
   const search = useLocation().search;
+  const [show, setShow] = useState(false);
   const searchTerm = new URLSearchParams(search).get("q");
   useTitle("Explore eBooks Collection");
  
