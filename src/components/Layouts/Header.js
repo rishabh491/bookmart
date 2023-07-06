@@ -42,6 +42,7 @@ export const Header = () => {
                   </Link>
                   <span  onClick={()=>setDropdown(!dropdown)} className="bi bi-person-circle cursor-pointer text-2xl text-gray-700 dark:text-white"></span>
                   {dropdown && (token ?<DropdownLoggedIn   setDropdown={setDropdown} /> :<DropdownLoggedOut   setDropdown={setDropdown} />)}
+                  {process.env.REACT_APP_HOST}
               </div>
           </div>
       </nav>
