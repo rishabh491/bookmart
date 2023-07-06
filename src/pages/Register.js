@@ -1,5 +1,6 @@
-import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
+
 
 export const Register = () => {
   const navigate=useNavigate();
