@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react"
 import { useCart } from "../context";
 import { useTitle } from "../hooks/useTitle";
-import { Rating } from "../components";
 import { useParams } from "react-router-dom";
+import { Rating } from "../components";
+
 
 
 
